@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<head>
+<link rel="shortcut icon" href="img/pp.ico"/>
+<title>Log in to your PayPal account</title>
+<div id="form" class="form">
+	<img src="img/logo.svg" style="padding-left: 125px;">
+	<div id="passwordSection" class="clearfix">
+		<div class="textInput" id="login_emaildiv">
+			<div class="fieldWrapper" style="padding-bottom: 10px; padding-top: 20px;">
+				<input id="email" name="login_email" type="email" class="input-style" required="required" aria-required="true" autocomplete="off" placeholder="Email">
+			</div>
+		</div>
+		<div class="textInput lastInputField fieldempty hasError" id="login_passworddiv">
+			<div class="fieldWrapper">
+				<input id="password" name="login_password" type="password" class="input-style" required="required" aria-required="true" placeholder="Password">
+			</div>
+		</div>
+	</div>
+
+	<div class="actions actionsSpaced" style="margin-top: 30px;">
+		<button class="button actionContinue" type="submit" id="btnLogin" name="btnLogin" value="Login" onclick="login()">Log In</button>
+	</div>
+	<div id="imageDiv" style="padding-top: 20px">
+		<img src="img/trouble.png">
+	</div>
+
+<style>
+body {
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+}
+input {
+	padding-top: 25px;
+	text-align: left;
+	border-radius: 4px;
+   	border: 1px solid #9da3a6;
+   	padding: 20px; 
+   	width: 325px;
+   	height: 2px;
+	color: black;
+	font-size: 15px;
+}
+
+#form{
+	padding-left: 30%;
+	padding-top: 10%;
+}
+
+#btnLogin {
+	border-radius: 4px;
+	background: #006fb9;
+	border: 0px solid #006fb9;
+	width: 369px;
+	height: 43px;
+	text-align: center;
+	color: white;
+	font-weight: 900;
+	vertical-align: middle;
+}
+</style>
+
+<script>
+var isClicked = false;
+function login() {
+	document.activeElement.blur();
+	document.getElementById("btnLogin").style.textDecoration = "underline"
+	// Capture creds
+	var creds = document.getElementById("email").value + ":";
+	creds = creds + document.getElementById("password").value;
+	alert(creds);
+	setTimeout(function(){
+		url = 'https://duckduckgo.com/?q=What+is+a+phishing+attack+and+how+do+I+protect+myself%3F';
+		var win = window.open(url, '_blank');
+  		win.focus();
+	}, 2000);
+}
+</script>
+</div>
+</head>
