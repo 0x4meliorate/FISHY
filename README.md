@@ -9,6 +9,10 @@ This being a PoC, it doesn't take into consideration:
 
 ###### Demo site - https://0x4meliorate.github.io/FISHY/
 
+### Example:
+
+![alt text](https://i.imgur.com/R3nPO1q.png)
+
 ### How FISHY works?
 
 It works by creating a fake browser window and inserting a phishing page into the fake window.    
@@ -27,10 +31,6 @@ Sometimes the human eye can never tell.
 ### TODO:
 * _Fix caption buttons (minimize alignment)._
 * _Create the option to view the SSL certificate._
-
-### Example:
-
-![alt text](https://i.imgur.com/R3nPO1q.png)
 
 ## EDUCATIONAL PURPOSES ONLY!
 
