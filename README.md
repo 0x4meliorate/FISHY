@@ -1,6 +1,11 @@
 # FISHY
 
-This is a proof-of-concept of an advanced phishing attack that I created 8 months ago.
+This is a proof-of-concept of an advanced phishing attack.
+I created FISHY 8 months ago.
+This being a PoC, it doesn't take into account:
+* Operating System
+* User Agent (Browser)
+* Dark Theme
 
 ###### Demo site - https://0x4meliorate.github.io/FISHY/
 
@@ -17,13 +22,10 @@ Sometimes the human eye can never tell.
 * _Loading/busy cursor before appearing, giving the effect their computer is loading the browser. Using system resources._
 * _Browser can be closed using caption buttons._
 * _Can be used with a reverse proxy server in order to phish your victims (in order to bypass 2FA)._
-* _~~SSL text isn't usually green like the this anymore. However, the brain correlates to: Green = "Go".~~_
 
 ### TODO: ###
-* _Fix caption buttons (alignment)._
+* _Fix caption buttons (minimize alignment)._
 * _Create the option to view the SSL certificate._
-* _~~Make the SSL icon the new icon.~~_
-* _Tiny pixel changes because if I can notice something off, I will never let it go._
 
 ### Example:
 
