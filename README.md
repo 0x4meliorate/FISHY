@@ -9,7 +9,7 @@ This being a PoC, it doesn't take into consideration:
 
 ###### Demo site - https://0x4meliorate.github.io/FISHY/
 
-### How FISHY works?:
+### How FISHY works?
 
 It works by creating a fake browser window and inserting a phishing page into the fake window.    
 In order for the attacker to set a valid domain and SSL certificate.  
