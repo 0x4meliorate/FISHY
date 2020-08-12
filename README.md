@@ -1,8 +1,8 @@
 # FISHY
 
-This is a proof-of-concept of an advanced phishing attack.
-I created FISHY 8 months ago.
-This being a PoC, it doesn't take into account:
+This is a proof-of-concept of an advanced phishing attack.  
+FISHY was created 8 months ago.  
+This being a PoC, it doesn't take into consideration:  
 * Operating System
 * User Agent (Browser)
 * Dark Theme
